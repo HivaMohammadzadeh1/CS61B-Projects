@@ -1,0 +1,13 @@
+#* java -ea ataxx.Main
+# My own Test
+manual blue
+block b2
+block d3
+block d4
+g1-f1
+g7-e7
+a7-a5
+a1-c1
+f1-d1
+dump
+quit

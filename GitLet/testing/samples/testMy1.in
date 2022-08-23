@@ -1,0 +1,33 @@
+# Two branches and switching
+I prelude1.inc
+> branch other
+<<<
++ f.txt one.txt
++ g.txt two.txt
+> add g.txt
+<<<
+> add f.txt
+<<<
+> commit "added 2 files"
+<<<
+E f.txt
+E g.txt
+> checkout other
+<<<
+* f.txt
+* g.txt
++ f.txt two.txt
+> add f.txt
+<<<
+> commit "Added additional file"
+<<<
+= f.txt two.txt
+* g.txt
+> checkout master
+<<<
+= f.txt one.txt
+= g.txt two.txt
+> checkout other
+<<<
+= f.txt two.txt
+* g.txt
